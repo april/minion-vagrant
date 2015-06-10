@@ -7,6 +7,7 @@ Mozilla Minion is available:
 * https://github.com/mozilla/minion-frontend
 
 # To configure:
+* Edit the BACKEND\_SRC and FRONTEND\_SRC variables in `Vagrantfile` to point to their locations on your local system
 * Edit the IP addresses in `Vagrantfile` and `hosts.sh` if you want your private network to use something besides 192.168.50.49 and 192.168.50.50
 * Edit `backend.sh` to change the default administrator's email address and name
 
