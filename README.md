@@ -16,4 +16,4 @@ Mozilla Minion is available:
 
 That's it!  You can ssh into your new (and hopefully fully-functioning) Minion instances with `vagrant ssh minion-frontend` and `vagrant ssh minion-backend`.
 
-You can access the minion-frontend site at http://192.168.50.50:8080 (or whatever you set the IP to)
+You can access the minion-frontend web site at http://192.168.50.50:8080 (or whatever you set the IP to).
