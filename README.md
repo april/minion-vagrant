@@ -7,8 +7,8 @@ Mozilla Minion is available:
 * https://github.com/mozilla/minion-frontend
 
 # To configure:
-* Edit the IP addresses in Vagrantfile if you want to use something besides 192.168.50.49 and 192.168.50.50
-* Edit backend.sh to change the default administrator's email address and name
+* Edit the IP addresses in `Vagrantfile` if you want to use something besides 192.168.50.49 and 192.168.50.50
+* Edit `backend.sh` to change the default administrator's email address and name
 
 # To run:
 * `vagrant up`
