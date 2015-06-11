@@ -29,13 +29,17 @@ python setup.py develop
 mkdir -p /etc/minion
 mv /tmp/backend.json /etc/minion
 
+# Install minion-nmap-plugin
+apt-get -y install nmap
+git clone https://github.com/mozilla/minion-nmap-plugin ${MINION_BACKEND}/../minion-nmap-plugin
+python ${MINION_BACKEND}/../minion-nmap-plugin/setup.py develop
+
 # Create database directory for MongoDB and start it up
 mkdir -p /data/db
 mongod --fork --logpath /var/log/mongodb/mongodb.log
 sleep 5
 
 # Start RabbitMQ
-mkdir /var/run/celery
 rabbitmq-server -detached
 sleep 5
 
